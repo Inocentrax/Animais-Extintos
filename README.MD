@@ -18,6 +18,4 @@ Este projeto web tem como objetivo conscientizar sobre a extinção de diversas 
 
 **Observações:**
 * **Imagens:** Foram geradas imagens com inteligencia Artificial para o fundo (Leonardo.ai).
-* **Desafios:** Sair do planejado pela Alura foi um grande passo, mas com o Gemini não teve perrengue.
-* **Agradecimentos:** Agradeço a Alura pelas Aulas e Experiencias compartilhadas.
 * **Updates:** Tenho em mente a ideia de aprimorar em Breve este projeto e manter atualizado.
