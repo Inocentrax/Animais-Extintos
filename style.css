@@ -33,7 +33,9 @@ body {
     /* Fixa a imagem durante o scroll */
     transition: background-image 1s ease-in-out; /* Transição suave */
 }
-
+p{
+    color: white
+}
 body {
     background-attachment: fixed;
     background-size: cover;
