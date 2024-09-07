@@ -1,0 +1,320 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Estiliza o corpo da página */
+body {
+    font-family: "Chakra Petch", sans-serif;
+    /* Define a fonte padrão */
+    display: flex;
+    /* Usa Flexbox para layout */
+    flex-direction: column;
+    /* Alinha os itens na vertical */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+    padding-top: 20px;
+    /* Adiciona um espaço superior para que o título não seja cortado */
+    height: 100vh;
+    /* Preenche a altura total da viewport */
+    margin: 0;
+    /* Remove a margem padrão */
+    padding: 0;
+    /* Remove o padding padrão */
+    justify-content: space-between;
+    /* Garante que o conteúdo fique centralizado */
+    min-height: 100vh;
+    /* A página ocupa a altura total da janela */
+    background-image: url('Leonardo_Phoenix_A_cinematic_hyperrealistic_image_that_vividly_1.jpg');
+    /* Adiciona a imagem de fundo */
+    background-size: cover;
+    /* Faz a imagem cobrir toda a tela */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-attachment: fixed;
+    /* Fixa a imagem durante o scroll */
+    transition: background-image 1s ease-in-out; /* Transição suave */
+}
+
+body {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+/* Gradiente nos títulos */
+h1 {
+    color: white;
+    font-size: 4.5rem;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    margin-top: 0;
+    /* Remove qualquer margem superior */
+    padding-top: 0;
+    /* Remove padding extra */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+    transition: transform 0.3s ease;
+    /* Transição suave ao passar o mouse */
+    font-weight: 700;
+    /* Fonte mais grossa */
+    margin-bottom: 20px;
+    /* Espaçamento abaixo do h1 */
+    animation: fadeIn 1.5s ease-in;
+    /* Animação de fade-in */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Sombra suave */
+}
+
+h1:hover {
+    transform: scale(1.05);
+    /* Aumenta levemente o título ao passar o mouse */
+}
+
+h1::after {
+    content: '';
+    width: 50%;
+    height: 4px;
+    background-color: #1E90FF;
+    position: absolute;
+    left: 25%;
+    bottom: -10px;
+    /* Linha personalizada logo abaixo do h1 */
+}
+
+/* Estiliza as seções da página */
+section {
+    display: flex;
+    /* Usa Flexbox para layout */
+    flex-direction: column;
+    /* Alinha os itens na vertical */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+    margin-bottom: 3rem;
+    /* Espaçamento abaixo de cada seção */
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    width: 30rem;
+    /* Largura dos inputs */
+    border: none;
+    /* Remove a borda padrão */
+    padding: 1rem;
+    /* Espaçamento interno */
+    border-radius: 1.5rem;
+    /* Borda arredondada */
+    margin-bottom: 1rem;
+    /* Espaçamento abaixo dos inputs */
+    color: #45474B;
+    /* Cor do texto */
+    font-size: 1rem;
+    /* Tamanho da fonte */
+    box-sizing: border-box;
+    /* Inclui padding e border na largura total */
+}
+
+/* Efeito de foco no campo de input */
+section input:focus {
+    border: 2px solid #30475E;
+    outline: none;
+    box-shadow: 0 0 10px rgba(48, 71, 94, 0.2);
+    /* Adiciona um brilho ao redor */
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+/* Estiliza os botões dentro das seções */
+/* Transições suaves para botões */
+section button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #30475E;
+    color: #F5F7F8;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito hover com transição */
+section button:hover {
+    background-color: #222831;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    /* Aumenta o botão levemente ao passar o mouse */
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 60rem;
+    /* Largura máxima da caixa de resultados */
+    height: 46vh;
+    /* Altura máxima da caixa de resultados */
+    overflow-y: auto;
+    /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem;
+    /* Espaçamento acima da caixa de resultados */
+    padding: 1rem;
+    /* Espaçamento interno */
+    border-radius: 0.6rem;
+    /* Borda arredondada */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background: #FFFFFF;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Aumenta a profundidade da sombra */
+    transition: box-shadow 0.3s ease;
+    /* Transição suave na sombra */
+}
+
+.item-resultado {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem;
+    /* Tamanho da fonte */
+    color: #222831;
+    /* Cor do texto */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    color: #1E90FF;
+    /* Cor mais visível */
+    font-weight: bold;
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* Intensifica a sombra ao passar o mouse */
+}
+
+.item-resultado a:hover {
+    text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #45474B;
+    /* Cor do texto */
+    margin: 0.5rem 0;
+    /* Margem acima e abaixo */
+}
+
+/* Estiliza o rodapé da página */
+/* Gradiente no rodapé */
+footer {
+    background: linear-gradient(135deg, #30475E, #222831);
+    /* Adiciona um gradiente */
+    color: #F5F7F8;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    /* Ajuste para evitar sobreposição */
+    bottom: 0;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #F5F7F8;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        /* Tamanho da fonte em telas menores */
+        letter-spacing: 0.2rem;
+        /* Espaçamento entre letras em telas menores */
+    }
+
+    section input {
+        width: 25rem;
+        /* Largura dos inputs em telas menores */
+        padding: 0.8rem;
+        /* Espaçamento interno em telas menores */
+    }
+
+    .resultados-pesquisa {
+        width: 40rem;
+        /* Largura da caixa de resultados em telas menores */
+        height: 40vh;
+        /* Altura da caixa de resultados em telas menores */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem;
+        /* Tamanho da fonte dos títulos em telas menores */
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem;
+        /* Tamanho da fonte em telas pequenas */
+        letter-spacing: 0.1rem;
+        /* Espaçamento entre letras em telas pequenas */
+    }
+
+    section input {
+        width: 17rem;
+        /* Largura total dos inputs em telas pequenas */
+    }
+
+    section button {
+        padding: 0.6rem 1rem;
+        /* Espaçamento interno do botão em telas pequenas */
+        font-size: 0.9rem;
+        /* Tamanho da fonte do botão em telas pequenas */
+    }
+
+    .resultados-pesquisa {
+        width: 90%;
+        /* Largura da caixa de resultados em telas pequenas */
+        height: 50vh;
+        /* Altura da caixa de resultados em telas pequenas */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem;
+        /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+
+    footer {
+        font-size: 0.9rem;
+        /* Tamanho da fonte do rodapé em telas pequenas */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
