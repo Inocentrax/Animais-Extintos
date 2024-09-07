@@ -19,3 +19,4 @@ Este projeto web tem como objetivo conscientizar sobre a extinção de diversas 
 **Observações:**
 * **Imagens:** Foram geradas imagens com inteligencia Artificial para o fundo (Leonardo.ai).
 * **Updates:** Tenho em mente a ideia de aprimorar em Breve este projeto e manter atualizado.
+* **Vercel:**https://animais-extintos.vercel.app/
